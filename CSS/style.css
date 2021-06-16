@@ -1,0 +1,105 @@
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+  
+.navigation {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.red {
+    color: red;
+}
+
+.fancyfonts {
+    font-family: 'Playfair Display', serif;
+}
+
+button {
+    background-color: black;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    color: red;
+    display: block;
+}
+
+button:hover {
+    background-color: white;
+  }
+
+p {
+    width: 500px;
+    padding: 5px;
+    float: center;
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.headshot {
+    width: 180;
+    height: 180;
+}
+
+html {
+    margin: 50px;
+}
+
+.heroImg {
+    margin: 100px; ;
+    text-align: center;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: center;
+    text-align: center;
+} 
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500;
+    grid-template-areas: 
+        'image1 Project1' 
+        'image2 Project2'
+        'image3 Project3';  
+}
+
+@media only screen and (max-width: 600px) {
+    .flexcontainer {
+        width: 100%;
+        flex-direction: column;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-column: 300px 300px 300px 300px 300px 300px;
+        grid-template-row: 100%;
+        grid-template-area: 
+        'image1' 
+        'Project1' 
+        'image2' 
+        'Project2'
+        'image3' 
+        'Project3'
+        ;
+    }
+}
